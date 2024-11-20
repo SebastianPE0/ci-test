@@ -1,0 +1,17 @@
+name: Say hello2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello_world2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo the message2
+        run: |
+          echo "Hola miduPRUEBA!"
+      - name: Dime la fecha
+        run: date
+      - run: ls -l
